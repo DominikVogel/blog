@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/quarto-german-quotes/index.html",
+    "href": "posts/quarto-german-quotes/index.html",
+    "title": "German quotation marks for Quarto",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "By default, Quarto does not localize quotation marks in HTML documents even if you specify a language with lang: in the document header. In German for example we use curved quotation marks – on the level of the commas as an opening mark and at the level of apostrophes as a closing mark1.\nTo solve this problem, you need to use a Lua-filter for pandoc, which converts your document to html."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "objectID": "posts/quarto-german-quotes/index.html#footnotes",
+    "href": "posts/quarto-german-quotes/index.html#footnotes",
+    "title": "German quotation marks for Quarto",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Quotation_mark↩︎"
   },
   {
     "objectID": "about.html",
@@ -25,20 +25,6 @@
     "href": "index.html",
     "title": "blog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 23, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nGerman quotation marks for Quarto\n\n\n\n\n\n\nquarto\n\n\nr\n\n\n\n\n\n\n\n\n\nApr 23, 2024\n\n\nDominik Vogel\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 20, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/quarto-german-quotes/index.html",
-    "href": "posts/quarto-german-quotes/index.html",
-    "title": "German quotation marks for Quarto",
-    "section": "",
-    "text": "By default, Quarto does not localize quotation marks in HTML documents even if you specify a language with lang: in the document header. In German for example we use curved quotation marks – on the level of the commas as an opening mark and at the level of apostrophes as a closing mark1.\nTo solve this problem, you need to use a Lua-filter for pandoc, which converts your document to html."
-  },
-  {
-    "objectID": "posts/quarto-german-quotes/index.html#footnotes",
-    "href": "posts/quarto-german-quotes/index.html#footnotes",
-    "title": "German quotation marks for Quarto",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Quotation_mark↩︎"
+    "text": "German quotation marks for Quarto\n\n\n\n\n\n\nquarto\n\n\nr\n\n\n\n\n\n\n\n\n\nApr 23, 2024\n\n\nDominik Vogel\n\n\n\n\n\n\nNo matching items"
   }
 ]
