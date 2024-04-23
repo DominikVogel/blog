@@ -1,0 +1,42 @@
+---
+title: "German quotation marks for Quarto"
+author: "Dominik Vogel"
+date: "2024-04-23"
+categories: [Quarto, R, Pandoc]
+---
+
+By default, Quarto does not localize quotation marks in HTML documents even if you specify a language with `lang:` in the document header. In German for example we use curved quotation marks -- on the level of the commas as an opening mark and at the level of apostrophes as a closing mark[^1].
+
+[^1]: <https://en.wikipedia.org/wiki/Quotation_mark>
+
+To solve this problem, you need to use a Lua-filter for Pandoc, which converts your document to html.
+
+1.  Download the `pandoc-quotes.lua` file from the Pandoc filters repository: https://github.com/pandoc/lua-filters/blob/master/pandoc-quotes.lua/pandoc-quotes.lua and store it in your Quarto project folder.
+2.  Modify the YAML header of your Quarto document:
+
+``` yaml
+---
+format: html
+filters: 
+  - pandoc-quotes.lua
+lang: de
+---
+
+# Quotation Test
+
+"Quotation please!"
+
+'Small quotation please!'
+```
+
+::: callout-warning
+####### Warning
+
+The [pandoc-quotes readme](https://github.com/pandoc/lua-filters/tree/master/pandoc-quotes.lua) directs you to the latest release which is not up-to-date.
+:::
+
+::: callout-tip
+####### Source
+
+Most infos are from [Julian's](https://stackoverflow.com/users/14137004/julian) [answer on StackOverflow](https://stackoverflow.com/a/75185569/6220045).
+:::
