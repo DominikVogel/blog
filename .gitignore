@@ -51,4 +51,4 @@ rsconnect/
 # Quarto
 /.quarto/
 /_site/
-
+/_freeze/
