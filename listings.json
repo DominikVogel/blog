@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/quarto-custom-cross-ref/index.html",
       "/posts/quarto-german-quotes/index.html"
     ]
   }
